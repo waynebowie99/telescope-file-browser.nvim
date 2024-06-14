@@ -23,7 +23,7 @@ describe("get_ordinal_path", function()
     if utils.iswin then
       assert.are.same(
         "file.txt",
-        me_utils.get_ordinal_path([[C:\\Users\a\b\c\\file.txt]], [[C:\Users\a\b\c]], [[C:\Users\a\b\]])
+        me_utils.get_ordinal_path([[C:\Users\a\b\c\\file.txt]], [[C:\Users\a\b\c]], [[C:\Users\a\b\]])
       )
     else
       assert.are.same("file.txt", me_utils.get_ordinal_path("/home/a/b/c//file.txt", "/home/a/b/c", "/home/a/b"))
